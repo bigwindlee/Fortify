@@ -1,0 +1,54 @@
+# commented out entries are disabled
+# indented entries correctly xlat only the desired flavor
+# unindented entries xlat more or fewer flavors than the desired one
+  psae
+# psaem         (no such module)
+  psaesrv
+  psaesrvutils
+  psanalyticsrv
+  psappeng
+  psappsrv
+  psbufapi
+  pscmn
+  pscmnutils
+  pscompat
+  psdb2
+  psdbgsrv
+  psdbgutils
+  psfinmth
+  psflr
+  psicsrv
+  psinf
+  psintbrkr
+  psio_dir
+  psiobase
+  psiocls
+  psjavaproxy
+  psjni
+  pskeystore
+  psmgr
+  psmt
+  psnetapi
+  psoftapi
+  psora
+# psoraconv     (is java source)
+  pspageutil
+  pspal
+  pspceval
+  pspcm
+  pspnlrt
+  pspnlrthtml
+  psppr
+  pspubsub
+# psqryapi      (is client only)
+  psreaper
+  pssam
+  pssamsrv
+  pssecurity
+  psserver
+  pssmtp
+  pssyb
+  pssys
+# psuser        (uses devenv.exe)
+  trio
+# xerces        (uses devenv.exe)
