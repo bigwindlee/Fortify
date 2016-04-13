@@ -1,10 +1,12 @@
 # Fortify
 custom rules, scan components, ...
 
-cmp_fortify -clean <release>
+cmp_fortify.bat /?
 
-cmp_fortify -xlat <release>
+cmp_fortify.bat -clean BuildID
 
-cmp_fortify -scan <release>
+cmp_fortify.bat -xlat BuildID
+
+cmp_fortify.bat -scan BuildID
 
 
