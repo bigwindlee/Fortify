@@ -1,0 +1,701 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RulePack xmlns="xmlns://www.fortifysoftware.com/schema/rules">
+    <RulePackID>2DDDAF8D-B542-4831-B8AF-A0E863097A98</RulePackID>
+    <SKU>SKU-C:\Program Files\HP_Fortify\HP_Fortify_SCA_and_Apps_4.21\Core\config\customrules\feng10</SKU>
+    <Name><![CDATA[C:\Program Files\HP_Fortify\HP_Fortify_SCA_and_Apps_4.21\Core\config\customrules\feng10]]></Name>
+    <Version>1.0</Version>
+    <Description><![CDATA[]]></Description>
+    <Rules version="6.21">
+        <RuleDefinitions>
+            <DataflowSourceRule formatVersion="6.21" language="cpp">
+                <RuleID>0BD9FCDB-B073-49DB-ACBF-940D5C4A6BCD</RuleID>
+                <TaintFlags>+XSS,+WEB</TaintFlags>
+                <FunctionIdentifier>
+                    <NamespaceName>
+                        <Pattern/>
+                    </NamespaceName>
+                    <ClassName>
+                        <Pattern>IPSNamedItemEnumerator</Pattern>
+                    </ClassName>
+                    <FunctionName>
+                        <Pattern>GetItem</Pattern>
+                    </FunctionName>
+                    <ApplyTo implements="true" overrides="true" extends="true"/>
+                </FunctionIdentifier>
+                <OutArguments>return</OutArguments>
+            </DataflowSourceRule>    
+            <DataflowSourceRule formatVersion="6.21" language="cpp">
+                <RuleID>0BD9FCDB-B073-49DB-ACBF-940D5C4A6BCE</RuleID>
+                <TaintFlags>+XSS,+WEB</TaintFlags>
+                <FunctionIdentifier>
+                    <NamespaceName>
+                        <Pattern/>
+                    </NamespaceName>
+                    <ClassName>
+                        <Pattern>IPSServletRequest</Pattern>
+                    </ClassName>
+                    <FunctionName>
+                        <Pattern>GetPortalURI</Pattern>
+                    </FunctionName>
+                    <ApplyTo implements="true" overrides="true" extends="true"/>
+                </FunctionIdentifier>
+                <OutArguments>return</OutArguments>
+            </DataflowSourceRule>   
+            <DataflowSourceRule formatVersion="6.21" language="cpp">
+                <RuleID>0BD9FCDB-B073-49DB-ACBF-940D5C4A6BCF</RuleID>
+                <TaintFlags>+XSS,+WEB</TaintFlags>
+                <FunctionIdentifier>
+                    <NamespaceName>
+                        <Pattern/>
+                    </NamespaceName>
+                    <ClassName>
+                        <Pattern>IPSServletRequest</Pattern>
+                    </ClassName>
+                    <FunctionName>
+                        <Pattern>GetContentURI</Pattern>
+                    </FunctionName>
+                    <ApplyTo implements="true" overrides="true" extends="true"/>
+                </FunctionIdentifier>
+                <OutArguments>return</OutArguments>
+            </DataflowSourceRule>  
+            <DataflowSourceRule formatVersion="6.21" language="cpp">
+                <RuleID>0BD9FCDB-B073-49DB-ACBF-940D5C4A6BD0</RuleID>
+                <TaintFlags>+XSS,+WEB</TaintFlags>
+                <FunctionIdentifier>
+                    <NamespaceName>
+                        <Pattern/>
+                    </NamespaceName>
+                    <ClassName>
+                        <Pattern>IPSServletRequest</Pattern>
+                    </ClassName>
+                    <FunctionName>
+                        <Pattern>GetPortal</Pattern>
+                    </FunctionName>
+                    <ApplyTo implements="true" overrides="true" extends="true"/>
+                </FunctionIdentifier>
+                <OutArguments>return</OutArguments>
+            </DataflowSourceRule>	
+            <DataflowSourceRule formatVersion="6.21" language="cpp">
+                <RuleID>0BD9FCDB-B073-49DB-ACBF-940D5C4A6BD1</RuleID>
+                <TaintFlags>+XSS,+WEB</TaintFlags>
+                <FunctionIdentifier>
+                    <NamespaceName>
+                        <Pattern/>
+                    </NamespaceName>
+                    <ClassName>
+                        <Pattern>IPSServletRequest</Pattern>
+                    </ClassName>
+                    <FunctionName>
+                        <Pattern>GetNode</Pattern>
+                    </FunctionName>
+                    <ApplyTo implements="true" overrides="true" extends="true"/>
+                </FunctionIdentifier>
+                <OutArguments>return</OutArguments>
+            </DataflowSourceRule>
+            <DataflowSourceRule formatVersion="6.21" language="cpp">
+                <RuleID>0BD9FCDB-B073-49DB-ACBF-940D5C4A6BD2</RuleID>
+                <TaintFlags>+XSS,+WEB</TaintFlags>
+                <FunctionIdentifier>
+                    <NamespaceName>
+                        <Pattern/>
+                    </NamespaceName>
+                    <ClassName>
+                        <Pattern>IPSServletRequest</Pattern>
+                    </ClassName>
+                    <FunctionName>
+                        <Pattern>GetServletPath</Pattern>
+                    </FunctionName>
+                    <ApplyTo implements="true" overrides="true" extends="true"/>
+                </FunctionIdentifier>
+                <OutArguments>return</OutArguments>
+            </DataflowSourceRule>
+            <DataflowSourceRule formatVersion="6.21" language="cpp">
+                <RuleID>0BD9FCDB-B073-49DB-ACBF-940D5C4A6BD3</RuleID>
+                <TaintFlags>+XSS,+WEB</TaintFlags>
+                <FunctionIdentifier>
+                    <NamespaceName>
+                        <Pattern/>
+                    </NamespaceName>
+                    <ClassName>
+                        <Pattern>IPSServletRequest</Pattern>
+                    </ClassName>
+                    <FunctionName>
+                        <Pattern>GetCharSet</Pattern>
+                    </FunctionName>
+                    <ApplyTo implements="true" overrides="true" extends="true"/>
+                </FunctionIdentifier>
+                <OutArguments>return</OutArguments>
+            </DataflowSourceRule>
+            <DataflowSourceRule formatVersion="6.21" language="cpp">
+                <RuleID>0BD9FCDB-B073-49DB-ACBF-940D5C4A6BD4</RuleID>
+                <TaintFlags>+XSS,+WEB</TaintFlags>
+                <FunctionIdentifier>
+                    <NamespaceName>
+                        <Pattern/>
+                    </NamespaceName>
+                    <ClassName>
+                        <Pattern>IPSServletRequest</Pattern>
+                    </ClassName>
+                    <FunctionName>
+                        <Pattern>GetAppServer</Pattern>
+                    </FunctionName>
+                    <ApplyTo implements="true" overrides="true" extends="true"/>
+                </FunctionIdentifier>
+                <OutArguments>return</OutArguments>
+            </DataflowSourceRule>
+            <DataflowSourceRule formatVersion="6.21" language="cpp">
+                <RuleID>0BD9FCDB-B073-49DB-ACBF-940D5C4A6BD5</RuleID>
+                <TaintFlags>+XSS,+WEB</TaintFlags>
+                <FunctionIdentifier>
+                    <NamespaceName>
+                        <Pattern/>
+                    </NamespaceName>
+                    <ClassName>
+                        <Pattern>IPSServletRequest</Pattern>
+                    </ClassName>
+                    <FunctionName>
+                        <Pattern>GetNewWinTargetURL</Pattern>
+                    </FunctionName>
+                    <ApplyTo implements="true" overrides="true" extends="true"/>
+                </FunctionIdentifier>
+                <OutArguments>return</OutArguments>
+            </DataflowSourceRule>
+            <DataflowSourceRule formatVersion="6.21" language="cpp">
+                <RuleID>0BD9FCDB-B073-49DB-ACBF-940D5C4A6BD6</RuleID>
+                <TaintFlags>+XSS,+WEB</TaintFlags>
+                <FunctionIdentifier>
+                    <NamespaceName>
+                        <Pattern/>
+                    </NamespaceName>
+                    <ClassName>
+                        <Pattern>IPSServletRequest</Pattern>
+                    </ClassName>
+                    <FunctionName>
+                        <Pattern>GetSaveWarningScriptName</Pattern>
+                    </FunctionName>
+                    <ApplyTo implements="true" overrides="true" extends="true"/>
+                </FunctionIdentifier>
+                <OutArguments>return</OutArguments>
+            </DataflowSourceRule>
+            <DataflowSourceRule formatVersion="6.21" language="cpp">
+                <RuleID>0BD9FCDB-B073-49DB-ACBF-940D5C4A6BD7</RuleID>
+                <TaintFlags>+XSS,+WEB</TaintFlags>
+                <FunctionIdentifier>
+                    <NamespaceName>
+                        <Pattern/>
+                    </NamespaceName>
+                    <ClassName>
+                        <Pattern>IPSServletRequest</Pattern>
+                    </ClassName>
+                    <FunctionName>
+                        <Pattern>GetHelpURL</Pattern>
+                    </FunctionName>
+                    <ApplyTo implements="true" overrides="true" extends="true"/>
+                </FunctionIdentifier>
+                <OutArguments>return</OutArguments>
+            </DataflowSourceRule>
+            <DataflowSourceRule formatVersion="6.21" language="cpp">
+                <RuleID>0BD9FCDB-B073-49DB-ACBF-940D5C4A6BD8</RuleID>
+                <TaintFlags>+XSS,+WEB</TaintFlags>
+                <FunctionIdentifier>
+                    <NamespaceName>
+                        <Pattern/>
+                    </NamespaceName>
+                    <ClassName>
+                        <Pattern>IPSServletRequest</Pattern>
+                    </ClassName>
+                    <FunctionName>
+                        <Pattern>GetPIAContentType</Pattern>
+                    </FunctionName>
+                    <ApplyTo implements="true" overrides="true" extends="true"/>
+                </FunctionIdentifier>
+                <OutArguments>return</OutArguments>
+            </DataflowSourceRule>
+            <DataflowSourceRule formatVersion="6.21" language="cpp">
+                <RuleID>0BD9FCDB-B073-49DB-ACBF-940D5C4A6BD9</RuleID>
+                <TaintFlags>+XSS,+WEB</TaintFlags>
+                <FunctionIdentifier>
+                    <NamespaceName>
+                        <Pattern/>
+                    </NamespaceName>
+                    <ClassName>
+                        <Pattern>IPSServletRequest</Pattern>
+                    </ClassName>
+                    <FunctionName>
+                        <Pattern>GetPortal</Pattern>
+                    </FunctionName>
+                    <ApplyTo implements="true" overrides="true" extends="true"/>
+                </FunctionIdentifier>
+                <OutArguments>return</OutArguments>
+            </DataflowSourceRule>
+            <DataflowSourceRule formatVersion="6.21" language="cpp">
+                <RuleID>0BD9FCDB-B073-49DB-ACBF-940D5C4A6BDA</RuleID>
+                <TaintFlags>+XSS,+WEB</TaintFlags>
+                <FunctionIdentifier>
+                    <NamespaceName>
+                        <Pattern/>
+                    </NamespaceName>
+                    <ClassName>
+                        <Pattern>IPSServletRequest</Pattern>
+                    </ClassName>
+                    <FunctionName>
+                        <Pattern>GetNode</Pattern>
+                    </FunctionName>
+                    <ApplyTo implements="true" overrides="true" extends="true"/>
+                </FunctionIdentifier>
+                <OutArguments>return</OutArguments>
+            </DataflowSourceRule>
+            <DataflowSourceRule formatVersion="6.21" language="cpp">
+                <RuleID>0BD9FCDB-B073-49DB-ACBF-940D5C4A6BDC</RuleID>
+                <TaintFlags>+XSS,+WEB</TaintFlags>
+                <FunctionIdentifier>
+                    <NamespaceName>
+                        <Pattern/>
+                    </NamespaceName>
+                    <ClassName>
+                        <Pattern>IPSServletRequest</Pattern>
+                    </ClassName>
+                    <FunctionName>
+                        <Pattern>GetDefaultContentType</Pattern>
+                    </FunctionName>
+                    <ApplyTo implements="true" overrides="true" extends="true"/>
+                </FunctionIdentifier>
+                <OutArguments>return</OutArguments>
+            </DataflowSourceRule>
+            <DataflowSourceRule formatVersion="6.21" language="cpp">
+                <RuleID>0BD9FCDB-B073-49DB-ACBF-940D5C4A6BDD</RuleID>
+                <TaintFlags>+XSS,+WEB</TaintFlags>
+                <FunctionIdentifier>
+                    <NamespaceName>
+                        <Pattern/>
+                    </NamespaceName>
+                    <ClassName>
+                        <Pattern>IPSServletRequest</Pattern>
+                    </ClassName>
+                    <FunctionName>
+                        <Pattern>GetQueryString</Pattern>
+                    </FunctionName>
+                    <ApplyTo implements="true" overrides="true" extends="true"/>
+                </FunctionIdentifier>
+                <OutArguments>return</OutArguments>
+            </DataflowSourceRule>
+            <DataflowSourceRule formatVersion="6.21" language="cpp">
+                <RuleID>0BD9FCDB-B073-49DB-ACBF-940D5C4A6BDE</RuleID>
+                <TaintFlags>+XSS,+WEB</TaintFlags>
+                <FunctionIdentifier>
+                    <NamespaceName>
+                        <Pattern/>
+                    </NamespaceName>
+                    <ClassName>
+                        <Pattern>IPSServletRequest</Pattern>
+                    </ClassName>
+                    <FunctionName>
+                        <Pattern>GetFullURI</Pattern>
+                    </FunctionName>
+                    <ApplyTo implements="true" overrides="true" extends="true"/>
+                </FunctionIdentifier>
+                <OutArguments>return</OutArguments>
+            </DataflowSourceRule>
+            <DataflowSourceRule formatVersion="6.21" language="cpp">
+                <RuleID>0BD9FCDB-B073-49DB-ACBF-940D5C4A6BDF</RuleID>
+                <TaintFlags>+XSS,+WEB</TaintFlags>
+                <FunctionIdentifier>
+                    <NamespaceName>
+                        <Pattern/>
+                    </NamespaceName>
+                    <ClassName>
+                        <Pattern>IPSServletRequest</Pattern>
+                    </ClassName>
+                    <FunctionName>
+                        <Pattern>GetRequestURI</Pattern>
+                    </FunctionName>
+                    <ApplyTo implements="true" overrides="true" extends="true"/>
+                </FunctionIdentifier>
+                <OutArguments>return</OutArguments>
+            </DataflowSourceRule>
+            <DataflowSourceRule formatVersion="6.21" language="cpp">
+                <RuleID>0BD9FCDB-B073-49DB-ACBF-940D5C4A6BE0</RuleID>
+                <TaintFlags>+XSS,+WEB</TaintFlags>
+                <FunctionIdentifier>
+                    <NamespaceName>
+                        <Pattern/>
+                    </NamespaceName>
+                    <ClassName>
+                        <Pattern>IBrowserInfo</Pattern>
+                    </ClassName>
+                    <FunctionName>
+                        <Pattern>GetBrowserTypeString</Pattern>
+                    </FunctionName>
+                    <ApplyTo implements="true" overrides="true" extends="true"/>
+                </FunctionIdentifier>
+                <OutArguments>return</OutArguments>
+            </DataflowSourceRule>	
+            <DataflowSourceRule formatVersion="6.21" language="cpp">
+                <RuleID>0BD9FCDB-B073-49DB-ACBF-940D5C4A6BE1</RuleID>
+                <TaintFlags>+XSS,+WEB</TaintFlags>
+                <FunctionIdentifier>
+                    <NamespaceName>
+                        <Pattern/>
+                    </NamespaceName>
+                    <ClassName>
+                        <Pattern>IBrowserInfo</Pattern>
+                    </ClassName>
+                    <FunctionName>
+                        <Pattern>GetBrowserVersionString</Pattern>
+                    </FunctionName>
+                    <ApplyTo implements="true" overrides="true" extends="true"/>
+                </FunctionIdentifier>
+                <OutArguments>return</OutArguments>
+            </DataflowSourceRule>
+            <DataflowSourceRule formatVersion="6.21" language="cpp">
+                <RuleID>0BD9FCDB-B073-49DB-ACBF-940D5C4A6BE2</RuleID>
+                <TaintFlags>+XSS,+WEB</TaintFlags>
+                <FunctionIdentifier>
+                    <NamespaceName>
+                        <Pattern/>
+                    </NamespaceName>
+                    <ClassName>
+                        <Pattern>IBrowserInfo</Pattern>
+                    </ClassName>
+                    <FunctionName>
+                        <Pattern>GetBrowserPlatformString</Pattern>
+                    </FunctionName>
+                    <ApplyTo implements="true" overrides="true" extends="true"/>
+                </FunctionIdentifier>
+                <OutArguments>return</OutArguments>
+            </DataflowSourceRule>
+            <DataflowSourceRule formatVersion="6.21" language="cpp">
+                <RuleID>0BD9FCDB-B073-49DB-ACBF-940D5C4A6BE3</RuleID>
+                <TaintFlags>+XSS,+WEB</TaintFlags>
+                <FunctionIdentifier>
+                    <NamespaceName>
+                        <Pattern/>
+                    </NamespaceName>
+                    <ClassName>
+                        <Pattern>IBrowserInfo</Pattern>
+                    </ClassName>
+                    <FunctionName>
+                        <Pattern>GetBrowserDeviceTypeClass</Pattern>
+                    </FunctionName>
+                    <ApplyTo implements="true" overrides="true" extends="true"/>
+                </FunctionIdentifier>
+                <OutArguments>return</OutArguments>
+            </DataflowSourceRule>
+            <DataflowSourceRule formatVersion="6.21" language="cpp">
+                <RuleID>0BD9FCDB-B073-49DB-ACBF-940D5C4A6BE4</RuleID>
+                <TaintFlags>+XSS,+WEB</TaintFlags>
+                <FunctionIdentifier>
+                    <NamespaceName>
+                        <Pattern/>
+                    </NamespaceName>
+                    <ClassName>
+                        <Pattern>IBrowserInfo</Pattern>
+                    </ClassName>
+                    <FunctionName>
+                        <Pattern>GetBrowserTypeClass</Pattern>
+                    </FunctionName>
+                    <ApplyTo implements="true" overrides="true" extends="true"/>
+                </FunctionIdentifier>
+                <OutArguments>return</OutArguments>
+            </DataflowSourceRule>
+            <DataflowSourceRule formatVersion="6.21" language="cpp">
+                <RuleID>0BD9FCDB-B073-49DB-ACBF-940D5C4A6BE5</RuleID>
+                <TaintFlags>+XSS,+WEB</TaintFlags>
+                <FunctionIdentifier>
+                    <NamespaceName>
+                        <Pattern/>
+                    </NamespaceName>
+                    <ClassName>
+                        <Pattern>IBrowserInfo</Pattern>
+                    </ClassName>
+                    <FunctionName>
+                        <Pattern>GetBrowserPlatformClass</Pattern>
+                    </FunctionName>
+                    <ApplyTo implements="true" overrides="true" extends="true"/>
+                </FunctionIdentifier>
+                <OutArguments>return</OutArguments>
+            </DataflowSourceRule>
+            <DataflowSourceRule formatVersion="6.21" language="cpp">
+                <RuleID>0BD9FCDB-B073-49DB-ACBF-940D5C4A6BE6</RuleID>
+                <TaintFlags>+XSS,+WEB</TaintFlags>
+                <FunctionIdentifier>
+                    <NamespaceName>
+                        <Pattern/>
+                    </NamespaceName>
+                    <ClassName>
+                        <Pattern>IBrowserInfo</Pattern>
+                    </ClassName>
+                    <FunctionName>
+                        <Pattern>GetBrowserCompressionString</Pattern>
+                    </FunctionName>
+                    <ApplyTo implements="true" overrides="true" extends="true"/>
+                </FunctionIdentifier>
+                <OutArguments>return</OutArguments>
+            </DataflowSourceRule>
+            <DataflowSourceRule formatVersion="6.21" language="cpp">
+                <RuleID>0BD9FCDB-B073-49DB-ACBF-940D5C4A6BE7</RuleID>
+                <TaintFlags>+XSS,+WEB</TaintFlags>
+                <FunctionIdentifier>
+                    <NamespaceName>
+                        <Pattern/>
+                    </NamespaceName>
+                    <ClassName>
+                        <Pattern>IBrowserInfo</Pattern>
+                    </ClassName>
+                    <FunctionName>
+                        <Pattern>GetWSRPId</Pattern>
+                    </FunctionName>
+                    <ApplyTo implements="true" overrides="true" extends="true"/>
+                </FunctionIdentifier>
+                <OutArguments>return</OutArguments>
+            </DataflowSourceRule>			
+            <DataflowPassthroughRule formatVersion="6.21" language="cpp">
+                <RuleID>BFB84780-6F0A-4C94-931B-81CED2A9F5A6</RuleID>
+                <TaintFlags>+XSS,+WEB</TaintFlags>
+                <FunctionIdentifier>
+                    <NamespaceName>
+                        <Pattern/>
+                    </NamespaceName>
+                    <ClassName>
+                        <Pattern/>
+                    </ClassName>
+                    <FunctionName>
+                        <Pattern>PSWcsToUtfs</Pattern>
+                    </FunctionName>
+                    <ApplyTo implements="true" overrides="true" extends="true"/>
+                </FunctionIdentifier>
+                <InArguments>1</InArguments>
+                <OutArguments>0</OutArguments>
+            </DataflowPassthroughRule>
+            <DataflowPassthroughRule formatVersion="6.21" language="cpp">
+                <RuleID>5182FB4A-DB98-4317-9C60-8FE6B529AD47</RuleID>
+                <TaintFlags>+XSS,+WEB</TaintFlags>
+                <FunctionIdentifier>
+                    <NamespaceName>
+                        <Pattern/>
+                    </NamespaceName>
+                    <ClassName>
+                        <Pattern>GENSTRING</Pattern>
+                    </ClassName>
+                    <FunctionName>
+                        <Pattern>Appendf</Pattern>
+                    </FunctionName>
+                    <ApplyTo implements="true" overrides="true" extends="true"/>
+                </FunctionIdentifier>
+                <InArguments>0</InArguments>
+                <OutArguments>this</OutArguments>
+            </DataflowPassthroughRule>
+            <DataflowPassthroughRule formatVersion="6.21" language="cpp">
+                <RuleID>5182FB4A-DB98-4317-9C60-8FE6B529AD48</RuleID>
+                <TaintFlags>+XSS,+WEB</TaintFlags>
+                <FunctionIdentifier>
+                    <NamespaceName>
+                        <Pattern/>
+                    </NamespaceName>
+                    <ClassName>
+                        <Pattern>GENSTRING</Pattern>
+                    </ClassName>
+                    <FunctionName>
+                        <Pattern>Appendf</Pattern>
+                    </FunctionName>
+                    <ApplyTo implements="true" overrides="true" extends="true"/>
+                </FunctionIdentifier>
+                <InArguments>1</InArguments>
+                <OutArguments>this</OutArguments>
+            </DataflowPassthroughRule>    
+            <DataflowPassthroughRule formatVersion="6.21" language="cpp">
+                <RuleID>5182FB4A-DB98-4317-9C60-8FE6B529AD49</RuleID>
+                <TaintFlags>+XSS,+WEB</TaintFlags>
+                <FunctionIdentifier>
+                    <NamespaceName>
+                        <Pattern/>
+                    </NamespaceName>
+                    <ClassName>
+                        <Pattern>GENSTRING</Pattern>
+                    </ClassName>
+                    <FunctionName>
+                        <Pattern>Appendf</Pattern>
+                    </FunctionName>
+                    <ApplyTo implements="true" overrides="true" extends="true"/>
+                </FunctionIdentifier>
+                <InArguments>2</InArguments>
+                <OutArguments>this</OutArguments>
+            </DataflowPassthroughRule>    
+            <DataflowPassthroughRule formatVersion="6.21" language="cpp">
+                <RuleID>5182FB4A-DB98-4317-9C60-8FE6B529AD50</RuleID>
+                <TaintFlags>+XSS,+WEB</TaintFlags>
+                <FunctionIdentifier>
+                    <NamespaceName>
+                        <Pattern/>
+                    </NamespaceName>
+                    <ClassName>
+                        <Pattern>GENSTRING</Pattern>
+                    </ClassName>
+                    <FunctionName>
+                        <Pattern>Appendf</Pattern>
+                    </FunctionName>
+                    <ApplyTo implements="true" overrides="true" extends="true"/>
+                </FunctionIdentifier>
+                <InArguments>3</InArguments>
+                <OutArguments>this</OutArguments>
+            </DataflowPassthroughRule> 
+            <DataflowPassthroughRule formatVersion="6.21" language="cpp">
+                <RuleID>51629BD4-0CAD-4FA6-8E0D-E5ADADDFF679</RuleID>
+                <TaintFlags>+XSS,+WEB</TaintFlags>
+                <FunctionIdentifier>
+                    <NamespaceName>
+                        <Pattern/>
+                    </NamespaceName>
+                    <ClassName>
+                        <Pattern>GENSTRING</Pattern>
+                    </ClassName>
+                    <FunctionName>
+                        <Pattern>operator\+=</Pattern>
+                    </FunctionName>
+                    <ApplyTo implements="true" overrides="true" extends="true"/>
+                </FunctionIdentifier>
+                <InArguments>0</InArguments>
+                <OutArguments>this</OutArguments>
+            </DataflowPassthroughRule>           
+            <DataflowSinkRule formatVersion="6.21" language="cpp">
+                <MetaInfo>
+                    <Group name="altcategoryCWE">CWE ID 79, 80</Group>
+                    <Group name="altcategoryOWASP2004">A4 Cross Site Scripting</Group>
+                    <Group name="altcategoryOWASP2007">A1 Cross Site Scripting (XSS)</Group>
+                    <Group name="altcategoryPCI1.1">Requirement 6.5.4</Group>
+                    <Group name="altcategoryPCI1.2">Requirement 6.3.1.1, 6.5.1</Group>
+                    <Group name="altcategorySTIG2">APP3510 CAT I, APP3580 CAT I</Group>
+                    <Group name="altcategoryWASC24+2">Cross-site Scripting</Group>
+                    <Group name="coveredRTA">Protected</Group>
+                    <Group name="Accuracy">5</Group>
+                    <Group name="Impact">5</Group>
+                    <Group name="RemediationEffort">1</Group>
+                    <Group name="Probability">5</Group>
+                    <Group name="audience">targeted,medium,broad,dev,fod</Group>
+                </MetaInfo>
+                <RuleID>202B2E5A-EDB7-464B-BFFC-4300040E404E0</RuleID>
+                <VulnKingdom>Input Validation and Representation</VulnKingdom>
+                <VulnCategory>Cross-Site Scripting</VulnCategory>
+                <VulnSubcategory>Reflected</VulnSubcategory>
+                <DefaultSeverity>4.0</DefaultSeverity>
+                <Description ref="desc.dataflow.cpp.cross_site_scripting_reflected">
+                    <Explanation append="true"><![CDATA[This issue is being reported by a custom rule.]]></Explanation>
+                </Description>
+                <Sink>
+                    <InArguments>0</InArguments>
+                    <Conditional>
+                        <And>
+                            <TaintFlagSet taintFlag="XSS"/>
+                            <Or>
+                                <TaintFlagSet taintFlag="WEB"/>
+                                <TaintFlagSet taintFlag="GUI_FORM"/>
+                                <TaintFlagSet taintFlag="FORM"/>
+                                <TaintFlagSet taintFlag="NETWORK"/>
+                            </Or>
+                            <Not>
+                                <TaintFlagSet taintFlag="VALIDATED_CROSS_SITE_SCRIPTING_REFLECTED"/>
+                            </Not>
+                        </And>
+                    </Conditional>
+                </Sink>
+                <FunctionIdentifier>
+                    <NamespaceName>
+                        <Pattern/>
+                    </NamespaceName>
+                    <ClassName>
+                        <Pattern>CWriteStream</Pattern>
+                    </ClassName>
+                    <FunctionName>
+                        <Pattern>PutBin</Pattern>
+                    </FunctionName>
+                    <ApplyTo implements="true" overrides="true" extends="true"/>
+                </FunctionIdentifier>
+            </DataflowSinkRule>            
+            <DataflowCleanseRule formatVersion="6.21" language="cpp">
+                <RuleID>11718A3D-CE89-44C0-8029-5933073EDDEF</RuleID>
+                <TaintFlags>+VALIDATED_CROSS_SITE_SCRIPTING_REFLECTED,+VALIDATED_CROSS_SITE_SCRIPTING_PERSISTENT,+VALIDATED_CROSS_SITE_SCRIPTING_DOM,+VALIDATED_CROSS_SITE_SCRIPTING_POOR_VALIDATION</TaintFlags>
+                <FunctionIdentifier>
+                    <NamespaceName>
+                        <Pattern/>
+                    </NamespaceName>
+                    <ClassName>
+                        <Pattern/>
+                    </ClassName>
+                    <FunctionName>
+                        <Pattern>HTMLGenerateText</Pattern>
+                    </FunctionName>
+                    <ApplyTo implements="true" overrides="true" extends="true"/>
+                </FunctionIdentifier>
+                <OutArguments>0</OutArguments>
+            </DataflowCleanseRule>
+            <DataflowCleanseRule formatVersion="6.21" language="cpp">
+                <RuleID>6F3BA490-E038-4AAF-915E-7333BF4648C3</RuleID>
+                <TaintFlags>+VALIDATED_CROSS_SITE_SCRIPTING_REFLECTED,+VALIDATED_CROSS_SITE_SCRIPTING_PERSISTENT,+VALIDATED_CROSS_SITE_SCRIPTING_DOM,+VALIDATED_CROSS_SITE_SCRIPTING_POOR_VALIDATION</TaintFlags>
+                <FunctionIdentifier>
+                    <NamespaceName>
+                        <Pattern/>
+                    </NamespaceName>
+                    <ClassName>
+                        <Pattern/>
+                    </ClassName>
+                    <FunctionName>
+                        <Pattern>HTMLGenerateEncodedURL</Pattern>
+                    </FunctionName>
+                    <ApplyTo implements="true" overrides="true" extends="true"/>
+                </FunctionIdentifier>
+                <OutArguments>0</OutArguments>
+            </DataflowCleanseRule>
+            <DataflowCleanseRule formatVersion="6.21" language="cpp">
+                <RuleID>9BB5691D-BAF2-4F67-9C0B-77611027CFDD</RuleID>
+                <TaintFlags>+VALIDATED_CROSS_SITE_SCRIPTING_REFLECTED,+VALIDATED_CROSS_SITE_SCRIPTING_PERSISTENT,+VALIDATED_CROSS_SITE_SCRIPTING_DOM,+VALIDATED_CROSS_SITE_SCRIPTING_POOR_VALIDATION</TaintFlags>
+                <FunctionIdentifier>
+                    <NamespaceName>
+                        <Pattern/>
+                    </NamespaceName>
+                    <ClassName>
+                        <Pattern/>
+                    </ClassName>
+                    <FunctionName>
+                        <Pattern>HTMLGenerateEncodedURL2</Pattern>
+                    </FunctionName>
+                    <ApplyTo implements="true" overrides="true" extends="true"/>
+                </FunctionIdentifier>
+                <OutArguments>return</OutArguments>
+            </DataflowCleanseRule>
+            <DataflowCleanseRule formatVersion="6.21" language="cpp">
+                <RuleID>C55E028E-7D7D-4276-8FFF-321E5D85BFE9</RuleID>
+                <TaintFlags>+VALIDATED_CROSS_SITE_SCRIPTING_REFLECTED,+VALIDATED_CROSS_SITE_SCRIPTING_PERSISTENT,+VALIDATED_CROSS_SITE_SCRIPTING_DOM,+VALIDATED_CROSS_SITE_SCRIPTING_POOR_VALIDATION</TaintFlags>
+                <FunctionIdentifier>
+                    <NamespaceName>
+                        <Pattern/>
+                    </NamespaceName>
+                    <ClassName>
+                        <Pattern/>
+                    </ClassName>
+                    <FunctionName>
+                        <Pattern>HTMLGenerateText2</Pattern>
+                    </FunctionName>
+                    <ApplyTo implements="true" overrides="true" extends="true"/>
+                </FunctionIdentifier>
+                <OutArguments>return</OutArguments>
+            </DataflowCleanseRule>
+            <DataflowCleanseRule formatVersion="6.21" language="cpp">
+                <RuleID>9BB5691D-BAF2-4F67-9C0B-77611027CFDE</RuleID>
+                <TaintFlags>+VALIDATED_CROSS_SITE_SCRIPTING_REFLECTED,+VALIDATED_CROSS_SITE_SCRIPTING_PERSISTENT,+VALIDATED_CROSS_SITE_SCRIPTING_DOM,+VALIDATED_CROSS_SITE_SCRIPTING_POOR_VALIDATION</TaintFlags>
+                <FunctionIdentifier>
+                    <NamespaceName>
+                        <Pattern/>
+                    </NamespaceName>
+                    <ClassName>
+                        <Pattern/>
+                    </ClassName>
+                    <FunctionName>
+                        <Pattern>HTMLGenerateEncodedURL3</Pattern>
+                    </FunctionName>
+                    <ApplyTo implements="true" overrides="true" extends="true"/>
+                </FunctionIdentifier>
+                <OutArguments>return</OutArguments>
+            </DataflowCleanseRule>            
+        </RuleDefinitions>
+    </Rules>
+</RulePack>
