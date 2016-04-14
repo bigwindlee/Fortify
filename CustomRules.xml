@@ -629,6 +629,23 @@
                 <OutArguments>0</OutArguments>
             </DataflowCleanseRule>
             <DataflowCleanseRule formatVersion="6.21" language="cpp">
+                <RuleID>6F3BA490-E038-4AAF-915E-7333BF4648C2</RuleID>
+                <TaintFlags>+VALIDATED_CROSS_SITE_SCRIPTING_REFLECTED,+VALIDATED_CROSS_SITE_SCRIPTING_PERSISTENT,+VALIDATED_CROSS_SITE_SCRIPTING_DOM,+VALIDATED_CROSS_SITE_SCRIPTING_POOR_VALIDATION</TaintFlags>
+                <FunctionIdentifier>
+                    <NamespaceName>
+                        <Pattern/>
+                    </NamespaceName>
+                    <ClassName>
+                        <Pattern/>
+                    </ClassName>
+                    <FunctionName>
+                        <Pattern>DoEncodeURL</Pattern>
+                    </FunctionName>
+                    <ApplyTo implements="true" overrides="true" extends="true"/>
+                </FunctionIdentifier>
+                <OutArguments>0</OutArguments>
+            </DataflowCleanseRule>			
+            <DataflowCleanseRule formatVersion="6.21" language="cpp">
                 <RuleID>6F3BA490-E038-4AAF-915E-7333BF4648C3</RuleID>
                 <TaintFlags>+VALIDATED_CROSS_SITE_SCRIPTING_REFLECTED,+VALIDATED_CROSS_SITE_SCRIPTING_PERSISTENT,+VALIDATED_CROSS_SITE_SCRIPTING_DOM,+VALIDATED_CROSS_SITE_SCRIPTING_POOR_VALIDATION</TaintFlags>
                 <FunctionIdentifier>
@@ -657,23 +674,6 @@
                     </ClassName>
                     <FunctionName>
                         <Pattern>HTMLGenerateEncodedURL2</Pattern>
-                    </FunctionName>
-                    <ApplyTo implements="true" overrides="true" extends="true"/>
-                </FunctionIdentifier>
-                <OutArguments>return</OutArguments>
-            </DataflowCleanseRule>
-            <DataflowCleanseRule formatVersion="6.21" language="cpp">
-                <RuleID>C55E028E-7D7D-4276-8FFF-321E5D85BFE9</RuleID>
-                <TaintFlags>+VALIDATED_CROSS_SITE_SCRIPTING_REFLECTED,+VALIDATED_CROSS_SITE_SCRIPTING_PERSISTENT,+VALIDATED_CROSS_SITE_SCRIPTING_DOM,+VALIDATED_CROSS_SITE_SCRIPTING_POOR_VALIDATION</TaintFlags>
-                <FunctionIdentifier>
-                    <NamespaceName>
-                        <Pattern/>
-                    </NamespaceName>
-                    <ClassName>
-                        <Pattern/>
-                    </ClassName>
-                    <FunctionName>
-                        <Pattern>HTMLGenerateText2</Pattern>
                     </FunctionName>
                     <ApplyTo implements="true" overrides="true" extends="true"/>
                 </FunctionIdentifier>
