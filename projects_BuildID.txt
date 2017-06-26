@@ -2,7 +2,6 @@
 # indented entries correctly xlat only the desired flavor
 # unindented entries xlat more or fewer flavors than the desired one
   psae
-# psaem         (no such module)
   psaesrv
   psaesrvutils
   psanalyticsrv
@@ -31,7 +30,6 @@
   psnetapi
   psoftapi
   psora
-# psoraconv     (is java source)
   pspageutil
   pspal
   pspceval
@@ -40,7 +38,6 @@
   pspnlrthtml
   psppr
   pspubsub
-# psqryapi      (is client only)
   psreaper
   pssam
   pssamsrv
@@ -49,6 +46,4 @@
   pssmtp
   pssyb
   pssys
-# psuser        (uses devenv.exe)
   trio
-# xerces        (uses devenv.exe)
